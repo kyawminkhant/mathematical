@@ -146,7 +146,11 @@ def ariAssign(equation):
                 
         num1=float(equation[location-1]) # Number before the sign
         num2=float(equation[location+1]) # Number after the sign
-        result=round(num1/num2, 1)
+        try:
+            result=round(num1/num2, 1)
+        except ZeroDivisionError:
+            print("Error! You can't divide by zero.")
+            return ("Undefined") 
         
         equation[location-1:location+2]=[str(result)] # Replace the section with the result
         return ariAssign(equation) # Repeat check
@@ -207,4 +211,5 @@ def ariAssign(equation):
         
         
 print(f"The result of the equation is {ariAssign(numFix(value))}")
+
 
