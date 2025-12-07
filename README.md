@@ -21,6 +21,20 @@ This program supports:
 
 ------------------------------
 
+▶️ How to Run
+Make sure you have Python 3.8+ installed.
+Download or clone the repository
+Run the script from a terminal or Python environment:
+python equation_solver.py
+
+Enter a mathematical expression when prompted, for example:
+⨠ (((13+14)/3)+2)
+
+The program will output:
+⨠ The result of the equation is 11.0
+
+------------------------------
+
 Priority	Operator	Type
 1.	^	Power
 2.	*, /	Multiplication / Division
