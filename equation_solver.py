@@ -1,5 +1,12 @@
-identifyAri=["+", "-", "*", "/", "^", "(", ")"]
-identifyNum=["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+"""
+Equation Solver
+----------------
+A custom expression interpreter that supports +, -, *, /, ^ and brackets,
+with operator precedence and recursive evaluation.
+"""
+
+identifyAri=["+", "-", "*", "/", "^", "(", ")"] # Identifying Arithmetic sign
+identifyNum=["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"] # Identifying Numbers
 targetReplace=-1 # For inserting the deleted part of the equation, case brackets
 
 # Accept input and validate string
@@ -200,3 +207,4 @@ def ariAssign(equation):
         
         
 print(f"The result of the equation is {ariAssign(numFix(value))}")
+
